@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@900&display=swap');
+:root {
+  --background-color: rgb(243 244 246);
+  --text-color: rgb(3 7 18);
+  --navbar-background: rgba(255, 255, 255, 0.3);
+  --navbar-background-light: rgba(255, 255, 255, 0.9);
+  --scroll-bar-color: var(--text-color);
+  --background-light:rgb(229 231 235);
+}
+.dark-theme-variables {
+  --background-color: rgb(3 7 18);
+  --text-color: rgb(243 244 246);
+  --navbar-background: rgba(3, 7, 8, 0.3);
+  --navbar-background-light: rgba(3, 7, 8, 0.9);
+  --scroll-bar-color: var(--text-color);
+  --background-light:rgb(31 41 55);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  appearance: none;
+  font-family: "Lexend", sans-serif;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+#root {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  height: 100px;
+  background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+.gradient__text {
+  background: linear-gradient(45deg, rgb(147 51 234), rgb(124 58 237));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

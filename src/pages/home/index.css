@@ -1,0 +1,98 @@
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bio__description {
+  width: 50%;
+  padding: 1rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.job__role {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  gap: 5px;
+  border-radius: 20px;
+  border: 2px solid rgba(124, 59, 237, 0.8);
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(124, 59, 237, 1);
+  -moz-box-shadow: 0px 0px 24px 0px rgba(124, 59, 237, 1);
+  box-shadow: 0px 0px 24px 0px rgba(124, 59, 237, 1);
+}
+.bio__heading {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 0.125px;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+.intro {
+  font-size: 1rem;
+  color: var(--text-color);
+  letter-spacing: 0.1px;
+}
+.social__links {
+  display: flex;
+  gap: 20px;
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: var(--text-color);
+  background-color: var(--background-light);
+  transition: none;
+}
+.social__link.linkedin:hover {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 115, 177, 1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 115, 177, 1);
+  box-shadow: 0px 0px 16px 0px rgba(0, 115, 177, 1);
+  background-color: rgba(0, 115, 177, 1);
+  color: white;
+}
+.social__link.github:hover {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(23, 21, 21, 1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(23, 21, 21, 1);
+  box-shadow: 0px 0px 16px 0px rgba(23, 21, 21, 1);
+  color: white;
+}
+.social__link.twitter:hover {
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 171, 238, 1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 171, 238, 1);
+  box-shadow: 0px 0px 16px 0px rgba(0, 171, 238, 1);
+  background-color: rgba(0, 171, 238, 1);
+  color: white;
+}
+.profile__photo {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+}
+.profile__image {
+  width: 400px;
+  height: 400px;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  object-fit: cover;
+  animation: imageMove 2s infinite alternate;
+  transition: all 0.5s ease-in-out;
+}
+@keyframes imageMove {
+  from {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  to {
+    border-radius: 30% 70% 70% 30% / 20% 20% 80% 80%;
+  }
+}
