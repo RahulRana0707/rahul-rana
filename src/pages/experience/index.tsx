@@ -1,10 +1,12 @@
-import React from 'react'
-import './index.css'
+import React from "react";
+import "./index.css";
 
 const ExperienceComponent = () => {
   return (
-    <div id='experience'>ExperienceComponent</div>
-  )
-}
+    <div id="experience">
+      Experience Component
+    </div>
+  );
+};
 
-export default ExperienceComponent
+export default ExperienceComponent;

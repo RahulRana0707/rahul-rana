@@ -29,7 +29,7 @@
   box-shadow: 0px 0px 24px 0px rgba(124, 59, 237, 1);
 }
 .bio__heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   letter-spacing: 0.125px;
   font-family: "Roboto", sans-serif;
@@ -59,21 +59,16 @@
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 115, 177, 1);
   -moz-box-shadow: 0px 0px 16px 0px rgba(0, 115, 177, 1);
   box-shadow: 0px 0px 16px 0px rgba(0, 115, 177, 1);
-  background-color: rgba(0, 115, 177, 1);
-  color: white;
 }
 .social__link.github:hover {
   -webkit-box-shadow: 0px 0px 16px 0px rgba(23, 21, 21, 1);
   -moz-box-shadow: 0px 0px 16px 0px rgba(23, 21, 21, 1);
   box-shadow: 0px 0px 16px 0px rgba(23, 21, 21, 1);
-  color: white;
 }
 .social__link.twitter:hover {
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 171, 238, 1);
   -moz-box-shadow: 0px 0px 16px 0px rgba(0, 171, 238, 1);
   box-shadow: 0px 0px 16px 0px rgba(0, 171, 238, 1);
-  background-color: rgba(0, 171, 238, 1);
-  color: white;
 }
 .profile__photo {
   display: flex;

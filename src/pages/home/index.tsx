@@ -1,14 +1,20 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./index.css";
 import { Sparkles, Linkedin, Github, Twitter } from "lucide-react";
 import { homeContent } from "../../content/home";
-import Profile from '../../assets/images/profile.jpg'
+import Profile from "../../assets/images/profile.jpg";
 
 const HomeComponent = () => {
   const { intro, jobRole, socials } = homeContent;
   return (
     <section id="home">
-      <div className="bio__description">
+      <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        className="bio__description"
+      >
         <span className="job__role">
           <Sparkles />
           {jobRole}
@@ -30,20 +36,25 @@ const HomeComponent = () => {
                 : null;
             return (
               <a
-                href="https://github.com/RahulRana0707"
+                href={social.link}
                 target={"__blank"}
                 className={`social__link ${social.name}`}
                 key={`${index}${social.link}`}
               >
-                {Icon && <Icon />}
+                {Icon ? <Icon /> : null}
               </a>
             );
           })}
         </div>
-      </div>
-      <div className="profile__photo">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        className="profile__photo"
+      >
         <img src={Profile} alt="profile__image" className="profile__image" />
-      </div>
+      </motion.div>
     </section>
   );
 };
