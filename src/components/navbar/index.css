@@ -1,8 +1,10 @@
-.navbar {
-  position: fixed;
+header {
+  position: sticky;
   top: 0px;
   left: 0px;
   width: 100%;
+}
+.navbar {
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -21,6 +23,20 @@
   letter-spacing: 0.125px;
 }
 .logo .plain__text {
+  color: var(--text-color);
+}
+.close__btn {
+  display: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.nav__functionality_section{
+  display: flex;
+  gap: 1rem;
+}
+.menu {
+  display: none;
+  background-color: transparent;
   color: var(--text-color);
 }
 .nav__links {
@@ -48,4 +64,48 @@
   color: var(--text-color);
   font-weight: 400;
   letter-spacing: 0.125px;
+}
+
+@media screen and (max-width: 768px) {
+  header .navbar {
+    position: relative;
+  }
+  header .navbar .nav__lists {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 50vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+  header .navbar .nav__lists .close__btn {
+    display: block;
+  }
+  header .navbar .nav__lists ul {
+    flex-direction: column;
+  }
+  header .navbar .nav__lists ul li a {
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  header .navbar .middle-part ul li a:hover {
+    margin-left: 2.5rem;
+  }
+  header .navbar .nav__lists.toggle {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  header .navbar .menu {
+    display: block;
+  }
 }

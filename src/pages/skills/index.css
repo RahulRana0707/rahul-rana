@@ -1,6 +1,6 @@
 #skills {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -29,4 +29,13 @@
   -webkit-box-shadow: 0px 0px 10px 0px rgba(124, 59, 237, 1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(124, 59, 237, 1);
   box-shadow: 0px 0px 10px 0px rgba(124, 59, 237, 1);
+}
+@media screen and (max-width:991px) {
+  .skills__box{
+    width: 90% ;
+  }
+  .skill__box{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
 }

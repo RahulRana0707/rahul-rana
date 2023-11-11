@@ -1,6 +1,6 @@
 #home {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--background-color);
   display: flex;
   justify-content: space-around;
@@ -89,5 +89,70 @@
   }
   to {
     border-radius: 30% 70% 70% 30% / 20% 20% 80% 80%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .job__role{
+    font-size: .7rem;
+  } 
+  .bio__heading{
+    font-size: 2rem
+  }
+  .profile__photo{
+    width: 45%;
+  }
+  .intro{
+    font-size: .8rem;
+  }
+}
+@media screen and (max-width: 768px){
+  #home{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .bio__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .profile__photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile__image{
+    width: 300px;
+    height: 300px;
+  }
+  .bio__heading{
+    text-align: center;
+  }
+  .intro{
+    text-align: center;
+  }
+}
+@media screen and (max-width:468px) {
+  .bio__description{
+    width: 100%;
+  }
+  .job__role{
+    width: max-content;
+    font-size: .5rem;
+  }
+  .profile__image{
+    width: 200px;
+    height: 200px;
+  }
+  .bio__heading{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .intro{
+    font-size: .7rem;
+    text-align: center;
   }
 }
