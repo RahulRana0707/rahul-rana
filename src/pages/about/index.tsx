@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import { FileDown } from "lucide-react";
 import { motion } from "framer-motion";

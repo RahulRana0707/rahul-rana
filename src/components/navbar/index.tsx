@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import ThemeToggler from "../theme-toggler";
 import "./index.css";
 import { X, Menu } from "lucide-react";

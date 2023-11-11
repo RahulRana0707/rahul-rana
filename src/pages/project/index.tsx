@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import { projectContent } from "../../content/projects";
 import { Github, ExternalLink } from "lucide-react";
