@@ -1,5 +1,10 @@
 export const homeContent = {
   jobRole: "Associate software engineer",
+  heading: {
+    start: "Hi, I'm ",
+    highlighter: "Rahul Rana",
+    end: "👋",
+  },
   intro:
     "I'm Rahul Rana, a tech enthusiast skilled in website, mobile, and software development. Check out my projects and skills.",
   socials: [

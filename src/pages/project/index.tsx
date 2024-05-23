@@ -1,29 +1,30 @@
 import "./index.css";
 import { projectContent } from "../../content/projects";
-import { Github, ExternalLink } from "lucide-react";
+import { Github, Link } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ProjectComponent = () => {
-  const { description, heading, projects } = projectContent;
+  const { heading, projects } = projectContent;
   return (
     <div id="project">
       <div className="wrapper__container">
         <motion.div
-          initial={{ x: -200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1, transition: { ease: "easeIn" } }}
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { ease: "easeIn", duration: 0.3 },
+          }}
           className="intro"
         >
           <h1 className="gradient__text">{heading}</h1>
-          <p>{description} </p>
         </motion.div>
         <div className="projects__card">
           {projects.map((project, index) => {
             return (
               <motion.div
-              key={project.name}
-                initial={{ y: 20, opacity: 0 }}
+                key={project.name}
+                initial={{ opacity: 0 }}
                 whileInView={{
-                  y: 0,
                   opacity: 1,
                   transition: { ease: "easeIn", delay: 0.005 * index },
                 }}
@@ -33,24 +34,17 @@ const ProjectComponent = () => {
                   <span>{project.name}</span>
                   <div className="navigate__icons">
                     <a href={project.live} target="_blank">
-                      <ExternalLink />
+                      <Link />
                     </a>
                     <a href={project.github} target="_blank">
                       <Github />
                     </a>
                   </div>
                 </div>
-                <div className="card__description">{project.description}</div>
+
                 <ul className="techs">
                   {project.tech.map((tec) => {
-                    return (
-                      <li
-                        key={tec.name}
-                        style={{ backgroundColor: `${tec.bgColor}` }}
-                      >
-                        {tec.name}
-                      </li>
-                    );
+                    return <li key={tec.name}>{tec.name}</li>;
                   })}
                 </ul>
               </motion.div>

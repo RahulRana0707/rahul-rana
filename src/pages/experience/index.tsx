@@ -18,17 +18,17 @@ const ExperienceComponent = () => {
               className="experience__card"
               contentStyle={{
                 background: "transparent",
-                boxShadow:"none",
-                border:"1px solid rgba(0,0,0,0.05)",
-                textAlign:"left"
+                boxShadow: "none",
+                border: "1px solid rgba(124, 59, 237, 0.5)",
+                textAlign: "left",
               }}
               contentArrowStyle={{ borderRight: "0.4rem solid #9ca3af" }}
               date={exp.date}
               icon={exp.icon}
               iconStyle={{
-                background:"white",
-                fontSize:"1.5rem",
-                color:"black"
+                background: "white",
+                fontSize: "1.5rem",
+                color: "black",
               }}
               key={index}
             >

@@ -14,3 +14,12 @@
 .experience__card p {
   font-size: 0.9rem !important;
 }
+
+@media screen and (max-width: 768px) {
+  .experience__card h3 {
+    font-size: 1.2rem;
+  }
+  .experience__card p {
+    font-size: 0.7rem !important;
+  }
+}

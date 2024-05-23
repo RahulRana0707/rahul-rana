@@ -27,6 +27,7 @@
   font-family: "Lexend", sans-serif;
   transition: all 0.3s ease;
   text-transform: capitalize;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -35,7 +36,6 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 #root {
   width: 100%;

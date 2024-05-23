@@ -30,7 +30,7 @@ header {
   background-color: transparent;
   color: var(--text-color);
 }
-.nav__functionality_section{
+.nav__functionality_section {
   display: flex;
   gap: 1rem;
 }
@@ -89,6 +89,10 @@ header {
   }
   header .navbar .nav__lists .close__btn {
     display: block;
+  }
+  .close__btn button {
+    background-color: transparent;
+    color: var(--text-color);
   }
   header .navbar .nav__lists ul {
     flex-direction: column;
