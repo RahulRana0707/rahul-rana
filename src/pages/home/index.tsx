@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import "./index.css";
-import { Sparkles, Linkedin, Github, Twitter, LineChart } from "lucide-react";
+import { Sparkles, Linkedin, Github, Twitter } from "lucide-react";
 import { homeContent } from "../../content/home";
 import Profile from "../../assets/images/profile.jpg";
 
